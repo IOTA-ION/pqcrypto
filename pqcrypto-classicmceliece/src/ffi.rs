@@ -185,6 +185,11 @@ pub const PQCLEAN_MCELIECE8192128F_AVX_CRYPTO_BYTES: usize = 32;
 #[link(name = "mceliece348864_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE348864_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE348864_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE348864_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -199,6 +204,11 @@ extern "C" {
 #[link(name = "mceliece348864_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE348864_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE348864_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE348864_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -234,6 +244,11 @@ extern "C" {
 #[link(name = "mceliece348864f_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE348864F_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE348864F_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE348864F_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -248,6 +263,11 @@ extern "C" {
 #[link(name = "mceliece348864f_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE348864F_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE348864F_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE348864F_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -283,6 +303,11 @@ extern "C" {
 #[link(name = "mceliece460896_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE460896_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE460896_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE460896_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -297,6 +322,11 @@ extern "C" {
 #[link(name = "mceliece460896_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE460896_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE460896_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE460896_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -332,6 +362,11 @@ extern "C" {
 #[link(name = "mceliece460896f_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE460896F_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE460896F_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE460896F_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -346,6 +381,11 @@ extern "C" {
 #[link(name = "mceliece460896f_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE460896F_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE460896F_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE460896F_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -381,6 +421,11 @@ extern "C" {
 #[link(name = "mceliece6688128_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE6688128_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE6688128_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE6688128_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -395,6 +440,11 @@ extern "C" {
 #[link(name = "mceliece6688128_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE6688128_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE6688128_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE6688128_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -430,6 +480,11 @@ extern "C" {
 #[link(name = "mceliece6688128f_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE6688128F_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE6688128F_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE6688128F_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -444,6 +499,11 @@ extern "C" {
 #[link(name = "mceliece6688128f_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE6688128F_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE6688128F_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE6688128F_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -479,6 +539,11 @@ extern "C" {
 #[link(name = "mceliece6960119_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE6960119_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE6960119_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE6960119_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -493,6 +558,11 @@ extern "C" {
 #[link(name = "mceliece6960119_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE6960119_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE6960119_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE6960119_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -528,6 +598,11 @@ extern "C" {
 #[link(name = "mceliece6960119f_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE6960119F_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE6960119F_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE6960119F_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -542,6 +617,11 @@ extern "C" {
 #[link(name = "mceliece6960119f_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE6960119F_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE6960119F_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE6960119F_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -577,6 +657,11 @@ extern "C" {
 #[link(name = "mceliece8192128_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE8192128_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE8192128_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE8192128_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -591,6 +676,11 @@ extern "C" {
 #[link(name = "mceliece8192128_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE8192128_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE8192128_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE8192128_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -626,6 +716,11 @@ extern "C" {
 #[link(name = "mceliece8192128f_vec")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE8192128F_VEC_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE8192128F_VEC_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE8192128F_VEC_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -640,6 +735,11 @@ extern "C" {
 #[link(name = "mceliece8192128f_clean")]
 extern "C" {
     pub fn PQCLEAN_MCELIECE8192128F_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_MCELIECE8192128F_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_MCELIECE8192128F_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,

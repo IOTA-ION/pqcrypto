@@ -239,6 +239,30 @@ pub fn keypair() -> (PublicKey, SecretKey) {
     {% endif %}
 }
 
+/// Generate a {{ scheme.name }} keypair derived from a seed
+{% if insecure %}
+#[deprecated(note = "Insecure cryptography, do not use in production")]
+{% endif %}
+pub fn keypair_seed(seed: &[u8]) -> (PublicKey, SecretKey) {
+    keypair_portable_seed(seed)
+}
+
+#[inline]
+fn keypair_portable_seed(seed: &[u8]) -> (PublicKey, SecretKey) {
+    let mut pk = PublicKey::new();
+    let mut sk = SecretKey::new();
+    assert_eq!(
+        unsafe {
+            {% if type == "kem" %}
+            ffi::PQCLEAN_{{ NS_NAME }}_crypto_kem_keypair_seed(seed.as_ptr(), pk.0.as_mut_ptr(), sk.0.as_mut_ptr())
+            {% else %}
+            ffi::PQCLEAN_{{ NS_NAME }}_crypto_sign_keypair_seed(seed.as_ptr(), pk.0.as_mut_ptr(), sk.0.as_mut_ptr())
+            {% endif %}
+        },
+        0
+    );
+    (pk, sk)
+}
 
 {% if type == "kem" %}
 

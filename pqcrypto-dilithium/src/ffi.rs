@@ -45,6 +45,11 @@ pub const PQCLEAN_DILITHIUM5_AVX2_CRYPTO_BYTES: usize = 4595;
 #[link(name = "dilithium2_clean")]
 extern "C" {
     pub fn PQCLEAN_DILITHIUM2_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_DILITHIUM2_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_DILITHIUM2_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -116,6 +121,11 @@ extern "C" {
 #[link(name = "dilithium3_clean")]
 extern "C" {
     pub fn PQCLEAN_DILITHIUM3_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_DILITHIUM3_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_DILITHIUM3_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -187,6 +197,11 @@ extern "C" {
 #[link(name = "dilithium5_clean")]
 extern "C" {
     pub fn PQCLEAN_DILITHIUM5_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_DILITHIUM5_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_DILITHIUM5_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,

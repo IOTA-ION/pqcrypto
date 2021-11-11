@@ -171,6 +171,11 @@ pub const PQCLEAN_SNTRUP1277_AVX2_CRYPTO_BYTES: usize = 32;
 #[link(name = "ntrulpr653_clean")]
 extern "C" {
     pub fn PQCLEAN_NTRULPR653_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_NTRULPR653_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_NTRULPR653_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -203,6 +208,11 @@ extern "C" {
 #[link(name = "ntrulpr761_clean")]
 extern "C" {
     pub fn PQCLEAN_NTRULPR761_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_NTRULPR761_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_NTRULPR761_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -235,6 +245,11 @@ extern "C" {
 #[link(name = "ntrulpr857_clean")]
 extern "C" {
     pub fn PQCLEAN_NTRULPR857_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_NTRULPR857_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_NTRULPR857_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -267,6 +282,11 @@ extern "C" {
 #[link(name = "ntrulpr953_clean")]
 extern "C" {
     pub fn PQCLEAN_NTRULPR953_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_NTRULPR953_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_NTRULPR953_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -299,6 +319,11 @@ extern "C" {
 #[link(name = "ntrulpr1013_clean")]
 extern "C" {
     pub fn PQCLEAN_NTRULPR1013_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_NTRULPR1013_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_NTRULPR1013_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -334,6 +359,11 @@ extern "C" {
 #[link(name = "ntrulpr1277_clean")]
 extern "C" {
     pub fn PQCLEAN_NTRULPR1277_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_NTRULPR1277_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_NTRULPR1277_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -369,6 +399,11 @@ extern "C" {
 #[link(name = "sntrup653_clean")]
 extern "C" {
     pub fn PQCLEAN_SNTRUP653_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_SNTRUP653_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SNTRUP653_CLEAN_crypto_kem_enc(ct: *mut u8, ss: *mut u8, pk: *const u8)
         -> c_int;
     pub fn PQCLEAN_SNTRUP653_CLEAN_crypto_kem_dec(
@@ -397,6 +432,11 @@ extern "C" {
 #[link(name = "sntrup761_clean")]
 extern "C" {
     pub fn PQCLEAN_SNTRUP761_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_SNTRUP761_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SNTRUP761_CLEAN_crypto_kem_enc(ct: *mut u8, ss: *mut u8, pk: *const u8)
         -> c_int;
     pub fn PQCLEAN_SNTRUP761_CLEAN_crypto_kem_dec(
@@ -425,6 +465,11 @@ extern "C" {
 #[link(name = "sntrup857_clean")]
 extern "C" {
     pub fn PQCLEAN_SNTRUP857_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_SNTRUP857_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SNTRUP857_CLEAN_crypto_kem_enc(ct: *mut u8, ss: *mut u8, pk: *const u8)
         -> c_int;
     pub fn PQCLEAN_SNTRUP857_CLEAN_crypto_kem_dec(
@@ -453,6 +498,11 @@ extern "C" {
 #[link(name = "sntrup953_clean")]
 extern "C" {
     pub fn PQCLEAN_SNTRUP953_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_SNTRUP953_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SNTRUP953_CLEAN_crypto_kem_enc(ct: *mut u8, ss: *mut u8, pk: *const u8)
         -> c_int;
     pub fn PQCLEAN_SNTRUP953_CLEAN_crypto_kem_dec(
@@ -481,6 +531,11 @@ extern "C" {
 #[link(name = "sntrup1013_clean")]
 extern "C" {
     pub fn PQCLEAN_SNTRUP1013_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_SNTRUP1013_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SNTRUP1013_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -513,6 +568,11 @@ extern "C" {
 #[link(name = "sntrup1277_clean")]
 extern "C" {
     pub fn PQCLEAN_SNTRUP1277_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_SNTRUP1277_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SNTRUP1277_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,

@@ -69,6 +69,11 @@ pub const PQCLEAN_FRODOKEM1344SHAKE_CLEAN_CRYPTO_BYTES: usize = 32;
 #[link(name = "frodokem640aes_opt")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM640AES_OPT_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM640AES_OPT_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM640AES_OPT_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -83,6 +88,11 @@ extern "C" {
 #[link(name = "frodokem640aes_clean")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM640AES_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM640AES_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM640AES_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -98,6 +108,11 @@ extern "C" {
 #[link(name = "frodokem640shake_opt")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM640SHAKE_OPT_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM640SHAKE_OPT_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM640SHAKE_OPT_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -112,6 +127,11 @@ extern "C" {
 #[link(name = "frodokem640shake_clean")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM640SHAKE_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM640SHAKE_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM640SHAKE_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -127,6 +147,11 @@ extern "C" {
 #[link(name = "frodokem976aes_opt")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM976AES_OPT_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM976AES_OPT_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM976AES_OPT_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -141,6 +166,11 @@ extern "C" {
 #[link(name = "frodokem976aes_clean")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM976AES_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM976AES_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM976AES_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -156,6 +186,11 @@ extern "C" {
 #[link(name = "frodokem976shake_opt")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM976SHAKE_OPT_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM976SHAKE_OPT_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM976SHAKE_OPT_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -170,6 +205,11 @@ extern "C" {
 #[link(name = "frodokem976shake_clean")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM976SHAKE_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM976SHAKE_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM976SHAKE_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -185,6 +225,11 @@ extern "C" {
 #[link(name = "frodokem1344aes_opt")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM1344AES_OPT_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM1344AES_OPT_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM1344AES_OPT_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -199,6 +244,11 @@ extern "C" {
 #[link(name = "frodokem1344aes_clean")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM1344AES_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM1344AES_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM1344AES_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -214,6 +264,11 @@ extern "C" {
 #[link(name = "frodokem1344shake_opt")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM1344SHAKE_OPT_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM1344SHAKE_OPT_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM1344SHAKE_OPT_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -228,6 +283,11 @@ extern "C" {
 #[link(name = "frodokem1344shake_clean")]
 extern "C" {
     pub fn PQCLEAN_FRODOKEM1344SHAKE_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FRODOKEM1344SHAKE_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FRODOKEM1344SHAKE_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,

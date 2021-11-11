@@ -378,6 +378,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA128FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSHARAKA128FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -452,6 +457,11 @@ extern "C" {
 #[link(name = "sphincs-haraka-128f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSHARAKA128FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA128FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -532,6 +542,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA128SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSHARAKA128SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -606,6 +621,11 @@ extern "C" {
 #[link(name = "sphincs-haraka-128s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSHARAKA128SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA128SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -686,6 +706,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA192FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSHARAKA192FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -760,6 +785,11 @@ extern "C" {
 #[link(name = "sphincs-haraka-192f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSHARAKA192FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA192FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -840,6 +870,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA192SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSHARAKA192SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -914,6 +949,11 @@ extern "C" {
 #[link(name = "sphincs-haraka-192s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSHARAKA192SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA192SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -994,6 +1034,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA256FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSHARAKA256FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -1068,6 +1113,11 @@ extern "C" {
 #[link(name = "sphincs-haraka-256f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSHARAKA256FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA256FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -1148,6 +1198,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA256SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSHARAKA256SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -1222,6 +1277,11 @@ extern "C" {
 #[link(name = "sphincs-haraka-256s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSHARAKA256SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSHARAKA256SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -1302,6 +1362,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256128FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHAKE256128FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -1376,6 +1441,11 @@ extern "C" {
 #[link(name = "sphincs-shake256-128f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHAKE256128FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256128FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -1456,6 +1526,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256128SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHAKE256128SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -1530,6 +1605,11 @@ extern "C" {
 #[link(name = "sphincs-shake256-128s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHAKE256128SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256128SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -1610,6 +1690,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256192FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHAKE256192FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -1684,6 +1769,11 @@ extern "C" {
 #[link(name = "sphincs-shake256-192f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHAKE256192FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256192FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -1764,6 +1854,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256192SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHAKE256192SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -1838,6 +1933,11 @@ extern "C" {
 #[link(name = "sphincs-shake256-192s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHAKE256192SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256192SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -1918,6 +2018,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256256FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHAKE256256FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -1992,6 +2097,11 @@ extern "C" {
 #[link(name = "sphincs-shake256-256f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHAKE256256FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256256FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -2072,6 +2182,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256256SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHAKE256256SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -2146,6 +2261,11 @@ extern "C" {
 #[link(name = "sphincs-shake256-256s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHAKE256256SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHAKE256256SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -2226,6 +2346,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256128FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHA256128FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -2300,6 +2425,11 @@ extern "C" {
 #[link(name = "sphincs-sha256-128f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHA256128FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256128FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -2380,6 +2510,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256128SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHA256128SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -2454,6 +2589,11 @@ extern "C" {
 #[link(name = "sphincs-sha256-128s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHA256128SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256128SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -2534,6 +2674,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256192FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHA256192FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -2608,6 +2753,11 @@ extern "C" {
 #[link(name = "sphincs-sha256-192f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHA256192FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256192FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -2688,6 +2838,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256192SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHA256192SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -2762,6 +2917,11 @@ extern "C" {
 #[link(name = "sphincs-sha256-192s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHA256192SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256192SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -2842,6 +3002,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256256FROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHA256256FROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -2916,6 +3081,11 @@ extern "C" {
 #[link(name = "sphincs-sha256-256f-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHA256256FSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256256FSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -2996,6 +3166,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256256SROBUST_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_SPHINCSSHA256256SROBUST_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -3070,6 +3245,11 @@ extern "C" {
 #[link(name = "sphincs-sha256-256s-simple_clean")]
 extern "C" {
     pub fn PQCLEAN_SPHINCSSHA256256SSIMPLE_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_SPHINCSSHA256256SSIMPLE_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;

@@ -35,6 +35,11 @@ pub const PQCLEAN_FALCON1024_AVX2_CRYPTO_BYTES: usize = 1330;
 #[link(name = "falcon-512_clean")]
 extern "C" {
     pub fn PQCLEAN_FALCON512_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FALCON512_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FALCON512_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -106,6 +111,11 @@ extern "C" {
 #[link(name = "falcon-1024_clean")]
 extern "C" {
     pub fn PQCLEAN_FALCON1024_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_FALCON1024_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_FALCON1024_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,

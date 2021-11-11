@@ -93,6 +93,11 @@ pub const PQCLEAN_KYBER102490S_AVX2_CRYPTO_BYTES: usize = 32;
 #[link(name = "kyber512_clean")]
 extern "C" {
     pub fn PQCLEAN_KYBER512_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_KYBER512_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_KYBER512_CLEAN_crypto_kem_enc(ct: *mut u8, ss: *mut u8, pk: *const u8) -> c_int;
     pub fn PQCLEAN_KYBER512_CLEAN_crypto_kem_dec(
         ss: *mut u8,
@@ -117,6 +122,11 @@ extern "C" {
 #[link(name = "kyber768_clean")]
 extern "C" {
     pub fn PQCLEAN_KYBER768_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_KYBER768_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_KYBER768_CLEAN_crypto_kem_enc(ct: *mut u8, ss: *mut u8, pk: *const u8) -> c_int;
     pub fn PQCLEAN_KYBER768_CLEAN_crypto_kem_dec(
         ss: *mut u8,
@@ -141,6 +151,11 @@ extern "C" {
 #[link(name = "kyber1024_clean")]
 extern "C" {
     pub fn PQCLEAN_KYBER1024_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_KYBER1024_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_KYBER1024_CLEAN_crypto_kem_enc(ct: *mut u8, ss: *mut u8, pk: *const u8)
         -> c_int;
     pub fn PQCLEAN_KYBER1024_CLEAN_crypto_kem_dec(
@@ -169,6 +184,11 @@ extern "C" {
 #[link(name = "kyber512-90s_clean")]
 extern "C" {
     pub fn PQCLEAN_KYBER51290S_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_KYBER51290S_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_KYBER51290S_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -204,6 +224,11 @@ extern "C" {
 #[link(name = "kyber768-90s_clean")]
 extern "C" {
     pub fn PQCLEAN_KYBER76890S_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_KYBER76890S_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_KYBER76890S_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -239,6 +264,11 @@ extern "C" {
 #[link(name = "kyber1024-90s_clean")]
 extern "C" {
     pub fn PQCLEAN_KYBER102490S_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_KYBER102490S_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_KYBER102490S_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,

@@ -54,6 +54,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_RAINBOWICIRCUMZENITHAL_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_RAINBOWICIRCUMZENITHAL_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -87,6 +92,11 @@ extern "C" {
 #[link(name = "rainbowI-classic_clean")]
 extern "C" {
     pub fn PQCLEAN_RAINBOWICLASSIC_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_RAINBOWICLASSIC_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_RAINBOWICLASSIC_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -120,6 +130,11 @@ extern "C" {
 #[link(name = "rainbowI-compressed_clean")]
 extern "C" {
     pub fn PQCLEAN_RAINBOWICOMPRESSED_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_RAINBOWICOMPRESSED_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_RAINBOWICOMPRESSED_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -156,6 +171,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_RAINBOWIIICIRCUMZENITHAL_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_RAINBOWIIICIRCUMZENITHAL_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -189,6 +209,11 @@ extern "C" {
 #[link(name = "rainbowIII-classic_clean")]
 extern "C" {
     pub fn PQCLEAN_RAINBOWIIICLASSIC_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_RAINBOWIIICLASSIC_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_RAINBOWIIICLASSIC_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -222,6 +247,11 @@ extern "C" {
 #[link(name = "rainbowIII-compressed_clean")]
 extern "C" {
     pub fn PQCLEAN_RAINBOWIIICOMPRESSED_CLEAN_crypto_sign_keypair(
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
+    pub fn PQCLEAN_RAINBOWIIICOMPRESSED_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
@@ -261,6 +291,11 @@ extern "C" {
         pk: *mut u8,
         sk: *mut u8,
     ) -> c_int;
+    pub fn PQCLEAN_RAINBOWVCIRCUMZENITHAL_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_RAINBOWVCIRCUMZENITHAL_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -294,6 +329,11 @@ extern "C" {
 #[link(name = "rainbowV-classic_clean")]
 extern "C" {
     pub fn PQCLEAN_RAINBOWVCLASSIC_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_RAINBOWVCLASSIC_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_RAINBOWVCLASSIC_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
@@ -327,6 +367,11 @@ extern "C" {
 #[link(name = "rainbowV-compressed_clean")]
 extern "C" {
     pub fn PQCLEAN_RAINBOWVCOMPRESSED_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_RAINBOWVCOMPRESSED_CLEAN_crypto_sign_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_RAINBOWVCOMPRESSED_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,

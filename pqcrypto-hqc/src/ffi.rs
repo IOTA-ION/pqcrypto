@@ -30,6 +30,11 @@ pub const PQCLEAN_HQCRMRS256_CLEAN_CRYPTO_BYTES: usize = 64;
 #[link(name = "hqc-rmrs-128_clean")]
 extern "C" {
     pub fn PQCLEAN_HQCRMRS128_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_HQCRMRS128_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_HQCRMRS128_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -45,6 +50,11 @@ extern "C" {
 #[link(name = "hqc-rmrs-192_clean")]
 extern "C" {
     pub fn PQCLEAN_HQCRMRS192_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_HQCRMRS192_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_HQCRMRS192_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,
@@ -60,6 +70,11 @@ extern "C" {
 #[link(name = "hqc-rmrs-256_clean")]
 extern "C" {
     pub fn PQCLEAN_HQCRMRS256_CLEAN_crypto_kem_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
+    pub fn PQCLEAN_HQCRMRS256_CLEAN_crypto_kem_keypair_seed(
+        seed: *const u8,
+        pk: *mut u8,
+        sk: *mut u8,
+    ) -> c_int;
     pub fn PQCLEAN_HQCRMRS256_CLEAN_crypto_kem_enc(
         ct: *mut u8,
         ss: *mut u8,

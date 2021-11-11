@@ -136,6 +136,28 @@ pub fn keypair() -> (PublicKey, SecretKey) {
     gen_keypair!(PQCLEAN_MCELIECE8192128_VEC_crypto_kem_keypair)
 }
 
+/// Generate a mceliece8192128 keypair derived from a seed
+pub fn keypair_seed(seed: &[u8]) -> (PublicKey, SecretKey) {
+    keypair_portable_seed(seed)
+}
+
+#[inline]
+fn keypair_portable_seed(seed: &[u8]) -> (PublicKey, SecretKey) {
+    let mut pk = PublicKey::new();
+    let mut sk = SecretKey::new();
+    assert_eq!(
+        unsafe {
+            ffi::PQCLEAN_MCELIECE8192128_VEC_crypto_kem_keypair_seed(
+                seed.as_ptr(),
+                pk.0.as_mut_ptr(),
+                sk.0.as_mut_ptr(),
+            )
+        },
+        0
+    );
+    (pk, sk)
+}
+
 macro_rules! encap {
     ($variant:ident, $pk:ident) => {{
         let mut ss = SharedSecret::new();
